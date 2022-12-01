@@ -12,7 +12,7 @@ os.mkdir(directory)
 cookie_value = open('cookie').read().replace('\n', '')
 cookies = {'session': cookie_value}
 
-url = 'https://adventofcode.com/2021/day/{}/input'.format(day)
+url = 'https://adventofcode.com/2022/day/{}/input'.format(day)
 respone = requests.get(url, cookies=cookies)
 
 path = os.path.join(directory, 'input')
